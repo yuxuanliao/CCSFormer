@@ -28,8 +28,8 @@ This is the code repo for the paper *A Substructure-Based Pre-trained Transforme
   conda env create -f requirements/conda/environment.yaml
 	```
 
-## SigmaCCS2
-The following files are in the [SigmaCCS2](SigmaCCS2) folder:
+## CCSFormer
+The following files are in the [CCSFormer](CCSFormer) folder:
 - [DataConstruction.py](SigmaCCS2/DataConstruction.py). for converting SMILES strings to molecular graph and line graph and using one-hot encoding to encode the adduct ion type.
 - [ModelTraining.py](SigmaCCS2/ModelTraining.py). for model training.
 - [ModelPrediction.py](SigmaCCS2/ModelPrediction.py). for defining the evaluation metrics and predicting the CCS values by SigmaCCS2.
