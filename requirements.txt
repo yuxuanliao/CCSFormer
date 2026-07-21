@@ -1,0 +1,4 @@
+gradio
+torch
+rdkit==2024.9.1
+scikit-learn
