@@ -96,15 +96,13 @@ The following specialized checkpoints of CCSFormer are available:
 
 ## 🧪 Web Server
 
-We provide an online **CSU-EP Web Server** that allows users to:
-- Upload EI-MS spectra in `.msp` format or manually input peak data.  
-- Retrieve top candidate molecules from the CSU-EP spectral embedding database (CSU-EP-DB).  
-- Visualize experimental and predicted spectra interactively.  
+We provide an online **CCSFormer Web Server** that integrates the following core capabilities:
+- Individual CCS prediction using adduct type and SMILES string inputs.
+- Batch CCS prediction by uploading a CSV file containing SMILES and adducts.
+- Retrieve top candidate molecules from an in silico reference database using multidimensional filtering on m/z, RT, and CCS in both individual query mode and batch query mode. 
+- Visualize molecular structures interactively and download predicted results in CSV format.
 
-The CSU-EP web server and CSU-EP-DB are hosted on Hugging Face, and can be visited through the following links:
-
-- 🌐 **CSU-EP web server**: The application interface allows users to upload unknow spectra and accsess results in real time. Visit the app here: [CSU-EP web server](https://huggingface.co/spaces/Ting20251112/CSU-EP).
-
+- 🌐 **CCSFormer web server**: The application interface allows users to upload a CSV file containing SMILES and adducts, and access results in real time. Visit the app here: [CCSFormer web server](https://huggingface.co/spaces/yuxuanliao/CCSFormer_v1).
 
 ---
 
