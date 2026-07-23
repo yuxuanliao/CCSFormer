@@ -28,23 +28,15 @@ This is the code repo for the paper *A Substructure-Based Pre-trained Transforme
   conda env create -f requirements/conda/environment.yaml
 	```
 
-## CCSFormer
-The following files are in the [CCSFormer](CCSFormer) folder:
-- [DataConstruction.py](SigmaCCS2/DataConstruction.py). for converting SMILES strings to molecular graph and line graph and using one-hot encoding to encode the adduct ion type.
-- [ModelTraining.py](SigmaCCS2/ModelTraining.py). for model training.
-- [ModelPrediction.py](SigmaCCS2/ModelPrediction.py). for defining the evaluation metrics and predicting the CCS values by SigmaCCS2.
-- [Parameter.py](SigmaCCS2/Parameter.py). for saving relevant parameters including atom radius, atom mass, adduct set, and atoms set.
-
-## Model training
-Train the model based on your own training dataset with [SigmaCCS2_train](https://github.com/yuxuanliao/SigmaCCS2/blob/main/SigmaCCS2/ModelTraining.py#L65) function.
+## Model pretraining
+Pretrain the model using the [pretrain](https://github.com/yuxuanliao/CCSFormer/blob/main/CCSFormer/Pretraining.py#L189) function.
     
-    SigmaCCS2_train(ifilepath, epochs, batchsize, savepath)
+    pretrain(model, dataloader_train, dataloader_val, optimizer, criterion_masked):
 
 *Parameters*
-- ifilepath : file path for storing the dataset to train the model
-- epochs : the hyperparameter of the model
-- batchsize : the hyperparameter of the model
-- savepath : file path where the model is saved
+- model : Substructure-based Transformer encoder
+- dataloader_train : training set of pretraining
+- dataloader_val : validation set of pretraining
 
 ## CCS Prediction
 The CCS values of molecules are predicted by using the already trained CCSFormer model with the [predict_external](https://github.com/yuxuanliao/CCSFormer/blob/main/CCSFormer/Prediction.py#L319) function.
