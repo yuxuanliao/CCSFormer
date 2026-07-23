@@ -56,12 +56,8 @@ The CCS values of molecules is predicted by using the already trained SigmaCCS2 
 - mfilepath : file path where the model is stored
 - ofilepath : file path to save the predicted CCS values
 
-## Usage
-The example code for model training is included in the [train.ipynb](train.ipynb). By directly running [train.ipynb](train.ipynb), user can train the model based on your own training dataset.
-
-The example code for CCS prediction is included in the [predict.ipynb](predict.ipynb). By directly running [predict.ipynb](predict.ipynb), user can use SigmaCCS2 to predict CCS values of small molecules.
-
-The example code details the complete pipeline for METLIN with step-by-step instructions, which is included in the [complete pipeline for METLIN.ipynb](complete%20pipeline%20for%20METLIN.ipynb). By directly running [complete pipeline for METLIN.ipynb](complete%20pipeline%20for%20METLIN.ipynb), user can directly preprocess raw data files, run predictions, generate final comparative performance metrics and scatter plot.
+## 🧩 Usage
+The example code for CCS prediction is included in [CCSFormer_Prediction.ipynb](CCSFormer_Prediction.ipynb). By directly running [CCSFormer_Prediction.ipynb](CCSFormer_Prediction.ipynb), users can use CCSFormer to predict CCS values of molecules.
 
 ## Data
 The following datasets of CCSFormer are available:
