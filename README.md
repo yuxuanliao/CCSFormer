@@ -65,13 +65,15 @@ The example code details the complete pipeline for METLIN with step-by-step inst
 
 ## Data
 The following datasets of CCSFormer are available:
-| Datasets | Sample size | Description |
+| Datasets | Size | Description |
 | --- | --- | --- |
-| [`Pretraining.csv`](data/Pretraining.csv) | ~300K | PubChem compounds for molecular structure representation learning |
-| [`CCSFormer_base.csv`](data/CCSFormer_base.csv) | ~58K | First-stage fine-tuning: METLIN-CCS for CCS training and prediction |
-| [`CCSFormer_precise.csv`](data/CCSFormer_precise.csv) | ~8K | Second-stage fine-tuning: Curated, cross-platform CCS values for model training |
+| [`Pretraining dataset.csv`](data/Pretraining%20dataset.csv) | ~300K | PubChem compounds for molecular structure representation learning |
+| [`CCSFormer_base.csv`](data/CCSFormer_base.csv) | ~58K | METLIN-CCS for first-stage CCS fine-tuning and prediction |
+| [`CCSFormer_precise.csv`](data/CCSFormer_precise.csv) | ~8K | Curated, cross-platform CCS values for second-stage fine-tuning |
 | [`ExternalTestSet1.csv`](data/ExternalTestSet1.csv) | 3906 | Environmental contaminants for independent model evaluation and comparison |
 | [`ExternalTestSet2.csv`](data/ExternalTestSet2.csv) | 74 | Doping agents for independent model evaluation and comparison |
+| [`training_fingerprint.pkl`](data/training_fingerprint.pkl) | 52982 | The fingerprints in the training sets of the two models |
+| [`vocab.pkl`](data/vocab.pkl) | 14073 | The vocabulary is constructed by aggregating the unique atomic substructures |
 
 ## CCSFormer Models
 📥 **Download**: Due to GitHub’s file size limitation (≤25 MB per file), we host the models (Pretraining_model.pth, CCSFormer_base.pth, and CCSFormer_precise.pth) on [GitHub Releases](https://github.com/yuxuanliao/CCSFormer/releases) | [HuggingFace Models](https://huggingface.co/yuxuanliao/CCSFormer-models/tree/main)
