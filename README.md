@@ -28,15 +28,14 @@ This is the code repo for the paper *A Substructure-Based Pre-trained Transforme
   conda env create -f requirements/conda/environment.yaml
 	```
 
-## Model pretraining
+## Pretraining
 Pretrain the model using the [pretrain](https://github.com/yuxuanliao/CCSFormer/blob/main/CCSFormer/Pretraining.py#L189) function.
     
-    pretrain(model, dataloader_train, dataloader_val, optimizer, criterion_masked):
+    pretrain(model, dataloader_train, dataloader_val, optimizer, criterion_masked, epochs, save_interval, save_dir, loss_file):
 
 *Parameters*
 - model : Substructure-based Transformer encoder
-- dataloader_train : training set of pretraining
-- dataloader_val : validation set of pretraining
+- dataloader_train, dataloader_val : training and validation sets of pretraining
 
 ## CCS Prediction
 The CCS values of molecules are predicted by using the already trained CCSFormer model with the [predict_external](https://github.com/yuxuanliao/CCSFormer/blob/main/CCSFormer/Prediction.py#L319) function.
