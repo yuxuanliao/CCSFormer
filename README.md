@@ -47,7 +47,7 @@ Train the model based on your own training dataset with [SigmaCCS2_train](https:
 - savepath : file path where the model is saved
 
 ## CCS Prediction
-The CCS values of molecules are predicted by using the already trained CCSFormer model with [predict_external](https://github.com/yuxuanliao/SigmaCCS2/blob/main/SigmaCCS2/SigmaCCS2_predict.py#L37) function.
+The CCS values of molecules are predicted by using the already trained CCSFormer model with the [predict_external](https://github.com/yuxuanliao/CCSFormer/blob/main/CCSFormer/Prediction.py#L319) function.
 
     predict_external(ifilepath, ccs_model_f1, ccs_model_f2, dictionary, ad_index, ofilepath)
 
@@ -56,7 +56,7 @@ The CCS values of molecules are predicted by using the already trained CCSFormer
 - ccs_model_f1 : file path where the CCSFormer_base model is stored
 - ccs_model_f2 : file path where the CCSFormer_precise model is stored
 - dictionary : load the vocabulary
-- ad_index : The fingerprints in the training sets of the two models
+- ad_index : the fingerprints in the training sets of the two models
 - ofilepath : file path to save the predicted CCS values
 
 ## 🧩 Usage
