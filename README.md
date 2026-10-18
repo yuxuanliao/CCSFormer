@@ -75,6 +75,11 @@ The following specialized checkpoints of CCSFormer are available:
 | [`CCSFormer_base.pth`](https://huggingface.co/yuxuanliao/CCSFormer-models/blob/main/CCSFormer_base.pth) | Regression | Base CCS model fine-tuned on METLIN-CCS |
 | [`CCSFormer_precise.pth`](https://huggingface.co/yuxuanliao/CCSFormer-models/blob/main/CCSFormer_precise.pth) | Regression | High-precision model obtained by fine-tuning the base CCS model on a curated dataset |
 
+## Archived release
+
+The code and model weights used in this study are permanently archived on Zenodo:
+[CCSFormer v1.0.1](https://doi.org/10.5281/zenodo.23459487) (DOI: [10.5281/zenodo.23459487](https://doi.org/10.5281/zenodo.23459487)).
+
 ## 🧪 Web Server
 
 We provide an online **CCSFormer Web Server** that integrates the following core capabilities:
